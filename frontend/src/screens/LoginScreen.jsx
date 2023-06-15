@@ -4,7 +4,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
-import { useLoginMutaion } from "../slice/userApiSlice";
+import { useLoginMutation } from "../slice/userApiSlice";
 import { setCredentials } from "../slice/authSlice";
 
 import { toast } from "react-toastify";
@@ -17,7 +17,7 @@ const LoginScreen = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [login, { isLoading }] = useLoginMutaion();
+  const [login, { isLoading }] = useLoginMutation();
 
   const { userInfo } = useSelector((state) => state.auth);
 

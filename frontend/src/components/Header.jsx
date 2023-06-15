@@ -1,4 +1,4 @@
-import { Navbar, Nav, Container, NavDropdown, Badge } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
